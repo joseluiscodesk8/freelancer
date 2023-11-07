@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_index_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.module.scss */ \"./src/styles/index.module.scss\");\n/* harmony import */ var _assets_web2_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/web2.png */ \"./src/assets/web2.png\");\n\n\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  var app = document.getElementById(\"web\");\n  if (app) {\n    var imgWeb = document.createElement(\"img\");\n    imgWeb.src = _assets_web2_png__WEBPACK_IMPORTED_MODULE_1__;\n    app.appendChild(imgWeb);\n  } else {\n    console.log(\"no hay video\");\n  }\n});\n\n//# sourceURL=webpack://freelancer/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_index_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.module.scss */ \"./src/styles/index.module.scss\");\n/* harmony import */ var _assets_WF_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/WF.png */ \"./src/assets/WF.png\");\n\n\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  var app = document.getElementById(\"web\");\n  if (app) {\n    var imgWeb = document.createElement(\"img\");\n    imgWeb.src = _assets_WF_png__WEBPACK_IMPORTED_MODULE_1__;\n    app.appendChild(imgWeb);\n  } else {\n    console.log(\"no hay video\");\n  }\n});\n\n//# sourceURL=webpack://freelancer/./src/index.js?");
 
 /***/ }),
 
@@ -30,13 +30,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/assets/web2.png":
-/*!*****************************!*\
-  !*** ./src/assets/web2.png ***!
-  \*****************************/
+/***/ "./src/assets/WF.png":
+/*!***************************!*\
+  !*** ./src/assets/WF.png ***!
+  \***************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"099358e16cee6a7f81dd.png\";\n\n//# sourceURL=webpack://freelancer/./src/assets/web2.png?");
+eval("module.exports = __webpack_require__.p + \"ec8ff4a48e0fd2ae0cbe.png\";\n\n//# sourceURL=webpack://freelancer/./src/assets/WF.png?");
 
 /***/ })
 
