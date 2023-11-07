@@ -1,5 +1,5 @@
 import "./styles/index.module.scss";
-import web from "./assets/web2.png";
+import web from "./assets/WF.png";
 
 window.addEventListener("DOMContentLoaded", () => {
   const app = document.getElementById("web");
