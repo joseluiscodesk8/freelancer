@@ -37,6 +37,34 @@ section {
     text-align: start;
 }
 
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 480px;
+    max-width: 400px;
+    margin: auto;
+
+    & section {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+        padding: 2%;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 25px #067c7c;
+
+        & p,i,h3,a {
+            background: transparent;
+        }
+
+        & a {
+            cursor: pointer;
+        }
+    }
+}
+
 footer {
     margin: auto;
     width: 80%;
