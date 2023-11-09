@@ -13,22 +13,28 @@ window.addEventListener("DOMContentLoaded", () => {
     console.log("no hay video")
   }
 
-  const content = document.querySelector('.content');
+  const contentElements = document.querySelectorAll('.content');
+  console.log(contentElements);
 
 const options = {
-  threshold: 0.5 // Se activará cuando el 50% del div sea visible
+  threshold: 0.2 // Se activará cuando el 50% del div sea visible
 };
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      content.classList.add('active');
-    } else {
-      content.classList.remove('active');
-    }
+if (contentElements.length > 0) {
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active');
+      }
+    });
+  }, options);
+
+  contentElements.forEach(element => {
+    observer.observe(element);
   });
-}, options);
-
-observer.observe(content);
-
-})
+} else {
+  console.error("No se encontraron elementos con la clase .content");
+}
+});
