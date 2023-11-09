@@ -56,7 +56,7 @@ aside section {
   border-radius: 10px;
   box-shadow: inset 0px 0px 25px #067c7c;
 }
-aside section p, aside section i, aside section h3, aside section a {
+aside section p, aside section i, aside section h3, aside section a, aside section b {
   background: transparent;
 }
 aside section a {

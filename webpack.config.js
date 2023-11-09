@@ -22,7 +22,7 @@ module.exports = {
             },
             {
                 test:/\.scss$/i,
-                use: [MiniCss.loader, "css-loader", "sass-loader"]
+                use: [MiniCss.loader, "css-loader", "sass-loader", ]
             },
             {
                 test: /\.(jpg|png)/i,

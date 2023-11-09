@@ -35,6 +35,7 @@ section {
     max-width: 400px;
     margin: auto;
     text-align: start;
+    
 }
 
 aside {
@@ -55,7 +56,7 @@ aside {
         border-radius: 10px;
         box-shadow: inset 0px 0px 25px #067c7c;
 
-        & p,i,h3,a {
+        & p,i,h3,a,b {
             background: transparent;
         }
 
@@ -87,3 +88,4 @@ footer {
         }
     }
 }
+
