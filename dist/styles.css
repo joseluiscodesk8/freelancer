@@ -1,6 +1,6 @@
-/*!***********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.module.scss ***!
-  \***********************************************************************************************************************/
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
+  \****************************************************************************************************************/
 * {
   background: #0abbbb;
   padding: 0;
@@ -80,4 +80,15 @@ footer section:nth-child(3) {
 }
 footer section:nth-child(3) i {
   font-size: 1.5rem;
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.content.active {
+  opacity: 1;
+  transform: translateY(0);
 }

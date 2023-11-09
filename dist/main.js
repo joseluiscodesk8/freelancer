@@ -16,17 +16,17 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_index_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.module.scss */ \"./src/styles/index.module.scss\");\n/* harmony import */ var _assets_WF_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/WF.png */ \"./src/assets/WF.png\");\n\n\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  var app = document.getElementById(\"web\");\n  if (app) {\n    var imgWeb = document.createElement(\"img\");\n    imgWeb.src = _assets_WF_png__WEBPACK_IMPORTED_MODULE_1__;\n    app.appendChild(imgWeb);\n  } else {\n    console.log(\"no hay video\");\n  }\n});\n\n//# sourceURL=webpack://freelancer/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.scss */ \"./src/styles/index.scss\");\n/* harmony import */ var _assets_WF_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/WF.png */ \"./src/assets/WF.png\");\n\n\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  var app = document.getElementById(\"web\");\n  if (app) {\n    var imgWeb = document.createElement(\"img\");\n    imgWeb.src = _assets_WF_png__WEBPACK_IMPORTED_MODULE_1__;\n    app.appendChild(imgWeb);\n  } else {\n    console.log(\"no hay video\");\n  }\n  var content = document.querySelector('.content');\n  var options = {\n    threshold: 0.5 // Se activará cuando el 50% del div sea visible\n  };\n\n  var observer = new IntersectionObserver(function (entries, observer) {\n    entries.forEach(function (entry) {\n      if (entry.isIntersecting) {\n        content.classList.add('active');\n      } else {\n        content.classList.remove('active');\n      }\n    });\n  }, options);\n  observer.observe(content);\n});\n\n//# sourceURL=webpack://freelancer/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/styles/index.module.scss":
-/*!**************************************!*\
-  !*** ./src/styles/index.module.scss ***!
-  \**************************************/
+/***/ "./src/styles/index.scss":
+/*!*******************************!*\
+  !*** ./src/styles/index.scss ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});\n\n//# sourceURL=webpack://freelancer/./src/styles/index.module.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://freelancer/./src/styles/index.scss?");
 
 /***/ }),
 
@@ -67,18 +67,6 @@ eval("module.exports = __webpack_require__.p + \"ec8ff4a48e0fd2ae0cbe.png\";\n\n
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -89,11 +77,6 @@ eval("module.exports = __webpack_require__.p + \"ec8ff4a48e0fd2ae0cbe.png\";\n\n
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
