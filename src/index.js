@@ -196,13 +196,13 @@ function detectarIdiomaNavegador() {
   </footer>
 `;
 
-  if (idiomaPreferido === 'en') {
+  if (idiomaPreferido === 'es') {
     // Contenido en inglés
-    document.documentElement.lang = 'en';
-    document.body.innerHTML = contenidoIngles;
+    document.documentElement.lang = 'es';
   } else {
     // Contenido en español
-    document.documentElement.lang = 'es';
+    document.documentElement.lang = 'en';
+    document.body.innerHTML = contenidoIngles;
   }
 }
 
